@@ -1,0 +1,44 @@
+bool stop = 0;
+double newX1 = 0;
+double newX2 = 0;
+double newX3 = 0;
+double newX4 = 0;
+double newX5 = 0;
+double newX6 = 0;
+double newY1 = 0;
+double newY2 = 0;
+double newY3 = 0;
+double newY4 = 0;
+double newY5 = 0;
+double newY6 = 0;
+
+void checkforward(){
+   newX1 = getcurentX + d1*cos(theta);//should make a condition to enter tis function.
+   newX2 = getcurentX + d2*cos(theta);
+   newX3 = getcurentX + d3*cos(theta);
+   newY1 = getcurentY + d1*sin(theta);
+   newY2 = getcurentY + d2*sin(theta);
+   newY3 = getcurentY + d3*sin(theta);
+   if(*******************************){
+            stop = 0;
+}
+   else{
+            stop = 1;
+}
+//we add that stop  = 1 makes the robot stop and wait for some time till te oponent is out of sight.
+// stop is the condition of entering the if statet that commandes the Hbridge.
+}
+void checkbackward(){
+   newX4 = getcurentX + d4*cos(theta);//should make a condition to enter tis function.
+   newX5 = getcurentX + d5*cos(theta);
+   newX6 = getcurentX + d6*cos(theta);
+   newY4 = getcurentY + d4*sin(theta);
+   newY5 = getcurentY + d5*sin(theta);
+   newY6 = getcurentY + d6*sin(theta);
+   if(*******************************){
+            stop = 0;
+}
+   else{
+            stop = 1;
+}
+}
